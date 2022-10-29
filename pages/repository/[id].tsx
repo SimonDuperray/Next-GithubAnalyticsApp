@@ -14,7 +14,7 @@ export const getStaticPaths = () => {
     }
 }
 
-export const getStaticProps = (context) => {
+export const getStaticProps = (context: { params: { id: any; }; }) => {
     const id = context.params.id;
     let repo = null;
 
@@ -29,7 +29,7 @@ export const getStaticProps = (context) => {
     }
 }
 
-const Details = ({ repo }) => {
+const Details = ({ repo }: any) => {
     return (
         <div>
             <h1>Details page of {repo.name}</h1>
