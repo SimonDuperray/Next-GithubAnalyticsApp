@@ -4,5 +4,4 @@ export interface IRepository {
     language: string;
     createdAt: string;
     pushedAt: string;
-    nbCommits: number;
 }

@@ -18,7 +18,6 @@ const ListRepositories = (props: ListRepositoriesProps | any) => {
                             language={repo.language}
                             createdAt={repo.createdAt}
                             pushedAt={repo.pushedAt}
-                            nbCommits={repo.nbCommits}
                         />
                     </div>
                 )

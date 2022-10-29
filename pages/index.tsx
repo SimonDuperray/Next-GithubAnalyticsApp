@@ -1,8 +1,8 @@
-import App from "../components/App";
+import Homepage from "../components/Homepage";
 
 export default function Home() {
     return (
-        <App />
+        <Homepage />
     )
 }
 

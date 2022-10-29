@@ -2,6 +2,45 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+.homepage-container {
+  height: 100vh;
+  padding: 10px;
+  background-color: #071739;
+}
+
+.homepage-container > * {
+  color: #fff;
+}
+
+.homepage-container > h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.homepage-container > h2 {
+  font-size: 35px;
+}
+
+form > button {
+  color: #000;
+  margin-left: 10px;
+}
+
+
+/* NOT FOUND PAGE */
+.notfound-container {
+  height: 100vh;
+  background-color: #071739;
+  text-align: center;
+  padding-top: 15%;
+}
+.notfound-container > * {
+  color: #fff;
+}
+.notfound-container > h1 {
+  font-size: 50px;
+  font-weight: bold;
 }

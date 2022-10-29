@@ -5,7 +5,7 @@ const ViewRepository = (props: IRepository) => {
     return (
         <div className="repo-card" key={props.id}>
             <h1>
-                <Link href={'/repository/'+props.id} key={props.id}>
+                <Link href={'/repositories/'+props.id} key={props.id}>
                     {props.name}
                 </Link>
                 <p>Details</p>
@@ -13,7 +13,6 @@ const ViewRepository = (props: IRepository) => {
                     <li>Language(s): {props.language}</li>
                     <li>Created at: {props.createdAt}</li>
                     <li>Last push at: {props.pushedAt}</li>
-                    <li>Number of commits: {props.nbCommits}</li>
                 </ul>
             </h1>
         </div>
