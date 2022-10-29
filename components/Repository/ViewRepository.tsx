@@ -1,13 +1,20 @@
 import Link from "next/link";
-import { Repository } from "../../interfaces/repositoriesInterfaces";
+import { IRepository } from "../../interfaces/IRepository";
 
-const ViewRepository = (props: Repository) => {
+const ViewRepository = (props: IRepository) => {
     return (
         <div className="repo-card" key={props.id}>
             <h1>
                 <Link href={'/repository/'+props.id} key={props.id}>
                     {props.name}
                 </Link>
+                <p>Details</p>
+                <ul>
+                    <li>Language(s): {props.language}</li>
+                    <li>Created at: {props.createdAt}</li>
+                    <li>Last push at: {props.pushedAt}</li>
+                    <li>Number of commits: {props.nbCommits}</li>
+                </ul>
             </h1>
         </div>
     )

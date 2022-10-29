@@ -1,18 +1,25 @@
 import ViewRepository from "./ViewRepository";
-import { Repository} from "../../interfaces/repositoriesInterfaces";
+import { IRepository} from "../../interfaces/IRepository";
 
 interface ListRepositoriesProps {
-    repositories: Repository[]
+    repositories: IRepository[]
 }
 
 // @ts-ignore
 const ListRepositories = (props: ListRepositoriesProps | any) => {
     return (
         <div>
-            {props.repositories.map((repo: Repository) => {
+            {props.repositories.map((repo: IRepository) => {
                 return (
                     <div key={repo.id}>
-                        <ViewRepository id={repo.id} name={repo.name} />
+                        <ViewRepository
+                            id={repo.id}
+                            name={repo.name}
+                            language={repo.language}
+                            createdAt={repo.createdAt}
+                            pushedAt={repo.pushedAt}
+                            nbCommits={repo.nbCommits}
+                        />
                     </div>
                 )
             })}
