@@ -5,7 +5,7 @@ const ViewRepository = (props: IRepository) => {
     return (
         <div className="repo-card" key={props.id}>
             <h1>
-                <Link href={'/repositories/'+props.id} key={props.id}>
+                <Link className="repo-link" href={'/repositories/'+props.id} key={props.id}>
                     {props.name}
                 </Link>
                 <p>Details</p>

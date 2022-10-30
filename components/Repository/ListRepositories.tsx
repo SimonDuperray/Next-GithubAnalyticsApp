@@ -8,7 +8,7 @@ interface ListRepositoriesProps {
 // @ts-ignore
 const ListRepositories = (props: ListRepositoriesProps | any) => {
     return (
-        <div>
+        <div className="global-repositories-container">
             {props.repositories.map((repo: IRepository) => {
                 return (
                     <div key={repo.id}>
@@ -16,8 +16,8 @@ const ListRepositories = (props: ListRepositoriesProps | any) => {
                             id={repo.id}
                             name={repo.name}
                             language={repo.language}
-                            createdAt={repo.createdAt}
-                            pushedAt={repo.pushedAt}
+                            createdAt={repo.created_at}
+                            pushedAt={repo.pushed_at}
                         />
                     </div>
                 )
