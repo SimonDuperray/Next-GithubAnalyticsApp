@@ -10,7 +10,7 @@ const CustomFooter = () => {
                 color: '#fff',
                 bottom: 0,
                 width: '100%',
-                backgroundColor: '#274684',
+                backgroundColor: '#212129',
                 textAlign: 'center'
             }}
         >

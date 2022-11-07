@@ -4,4 +4,5 @@ export interface IRepository {
     language: string;
     createdAt: string;
     pushedAt: string;
+    size: number;
 }

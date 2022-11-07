@@ -1,4 +1,6 @@
 import { reposList } from "../../files/reposFetched"
+import DetailsRepositories from "../../components/Repository/DetailsRepositories";
+import {IRepository} from "../../interfaces/IRepository";
 
 export const getStaticPaths = () => {
     const paths = reposList.map(repo => {
@@ -29,12 +31,10 @@ export const getStaticProps = (context: { params: { id: any; }; }) => {
     }
 }
 
-const Details = ({ repo }: any) => {
+const Details = ({ repo }: IRepository | any) => {
     return (
         <div>
-            <h1>Details page of {repo.name}</h1>
-            <p>{ repo.fullname }</p>
-            <p>{ repo.size }</p>
+            <h1>{repo.id}</h1>
         </div>
     )
 }

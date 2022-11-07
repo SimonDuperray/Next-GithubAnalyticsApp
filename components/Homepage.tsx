@@ -19,7 +19,7 @@ const Homepage = () => {
     return (
         <Layout>
             <Content className="homepage-container">
-                <h1>Welcome on Github Analytics App !</h1>
+                <h1>Welcome on <span className="title-span-color">Github Analytics App</span> !</h1>
                 <h2>This application will allow you to learn more about your Github repositories insights.</h2>
                 <h2>By browsing on this app you will learn some details about your commit frequency, language repartition, etc.</h2>
                 <h2>You just have to enter your Github username in the following form, that's it !</h2>
